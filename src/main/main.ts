@@ -39,7 +39,7 @@ function createWindow() {
     // Open DevTools in development
     win.webContents.openDevTools()
   } else {
-    win.loadFile(path.join(process.env.DIST, 'index.html'))
+    win.loadFile(path.join(process.env.DIST!, 'index.html'))
   }
 }
 
