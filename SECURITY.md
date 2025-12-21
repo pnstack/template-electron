@@ -18,7 +18,10 @@ We take security bugs seriously. We appreciate your efforts to responsibly discl
 If you discover a security vulnerability, please follow these steps:
 
 1. **DO NOT** open a public issue
-2. Email the maintainers at [security contact - to be added]
+2. Use GitHub's Security Advisory feature to privately report the vulnerability:
+   - Go to the repository's Security tab
+   - Click "Report a vulnerability"
+   - Fill out the advisory form
 3. Include the following information:
    - Type of vulnerability
    - Full paths of source file(s) related to the vulnerability
