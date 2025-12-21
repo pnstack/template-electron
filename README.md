@@ -1,5 +1,10 @@
 # Template Electron
 
+[![CI](https://github.com/pnstack/template-electron/workflows/CI/badge.svg)](https://github.com/pnstack/template-electron/actions/workflows/ci.yml)
+[![Release](https://github.com/pnstack/template-electron/workflows/Release/badge.svg)](https://github.com/pnstack/template-electron/actions/workflows/release.yml)
+[![Code Quality](https://github.com/pnstack/template-electron/workflows/Code%20Quality/badge.svg)](https://github.com/pnstack/template-electron/actions/workflows/quality.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A modern, production-ready Electron application template built with TypeScript, React, and TailwindCSS.
 
 ## 🚀 Features
@@ -102,6 +107,54 @@ This template follows Electron security best practices:
 - Node integration disabled
 - Secure IPC via preload script
 - No direct Node.js access in renderer
+
+## 🔄 CI/CD
+
+This project includes comprehensive CI/CD workflows using GitHub Actions:
+
+### Workflows
+
+- **CI** (`ci.yml`) - Runs on every push and PR
+  - Tests across multiple OS (Ubuntu, Windows, macOS)
+  - Tests across multiple Node.js versions (18.x, 20.x)
+  - Type checking with TypeScript
+  - Build verification
+  - Automatic artifact uploads
+
+- **Release** (`release.yml`) - Automated releases
+  - Triggers on version tags (e.g., `v1.0.0`)
+  - Builds for all platforms (Windows, macOS, Linux)
+  - Creates GitHub releases with binaries
+  - Manual trigger option available
+
+- **PR Check** (`pr-check.yml`) - Pull request validation
+  - Type checking
+  - Build verification
+  - PR size warnings
+
+- **Code Quality** (`quality.yml`) - Code quality checks
+  - TypeScript validation
+  - Security audits
+  - Bundle size analysis
+  - Weekly scheduled runs
+
+### Creating a Release
+
+To create a new release:
+
+```bash
+# Create and push a version tag
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The release workflow will automatically build and publish binaries for all platforms.
+
+### Dependencies
+
+Dependabot is configured to automatically check for:
+- npm package updates (weekly)
+- GitHub Actions updates (weekly)
 
 ## 🤝 Contributing
 
