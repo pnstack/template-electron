@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Ask a Question
+    url: https://github.com/pnstack/template-electron/discussions
+    about: Ask questions and discuss with the community
+  - name: 📚 Documentation
+    url: https://github.com/pnstack/template-electron/blob/main/README.md
+    about: Read the documentation
+  - name: 🔒 Security Issue
+    url: https://github.com/pnstack/template-electron/security/policy
+    about: Report security vulnerabilities

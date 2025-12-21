@@ -1,5 +1,10 @@
 # Template Electron
 
+[![CI](https://github.com/pnstack/template-electron/workflows/CI/badge.svg)](https://github.com/pnstack/template-electron/actions/workflows/ci.yml)
+[![Release](https://github.com/pnstack/template-electron/workflows/Release/badge.svg)](https://github.com/pnstack/template-electron/actions/workflows/release.yml)
+[![Code Quality](https://github.com/pnstack/template-electron/workflows/Code%20Quality/badge.svg)](https://github.com/pnstack/template-electron/actions/workflows/quality.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A modern, production-ready Electron application template built with TypeScript, React, and TailwindCSS.
 
 ## 🚀 Features
