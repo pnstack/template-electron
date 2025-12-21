@@ -123,6 +123,7 @@ This project includes comprehensive CI/CD workflows using GitHub Actions:
 
 - **Release** (`release.yml`) - Automated releases
   - Triggers on version tags (e.g., `v1.0.0`)
+  - Triggers on pushes to main branch (auto-creates release with package.json version)
   - Builds for all platforms (Windows, macOS, Linux)
   - Creates GitHub releases with binaries
   - Manual trigger option available
@@ -140,8 +141,14 @@ This project includes comprehensive CI/CD workflows using GitHub Actions:
 
 ### Creating a Release
 
-To create a new release:
+Releases are automatically created in two ways:
 
+**1. Automatic release on main branch**
+- Every push to the main branch automatically creates a release
+- Uses the version from `package.json` (e.g., if package.json has "version": "1.0.0", it creates release v1.0.0)
+- Builds and publishes binaries for all platforms
+
+**2. Manual release with version tag**
 ```bash
 # Create and push a version tag
 git tag v1.0.0
